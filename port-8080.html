@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pisal Masala - Port 8080 Solution</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .alert { background: #ff6b6b; color: white; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .solution { background: #4ecdc4; color: white; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .step { background: #f8f9fa; padding: 15px; margin: 10px 0; border-left: 4px solid #007bff; }
+        .code { background: #f1f3f4; padding: 10px; border-radius: 4px; font-family: monospace; }
+        .success { color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🚨 PORT CONFLICT DETECTED</h1>
+    
+    <div class="alert">
+        <h3>❌ Problem Found:</h3>
+        <p>Another Apache instance is already running on port 80 from:<br>
+        <code>C:\Users\Microsoft surface\Downloads\PISAL\apache\bin\httpd.exe</code></p>
+    </div>
+
+    <div class="solution">
+        <h3>✅ QUICK SOLUTION:</h3>
+        <p><strong>Access your site on port 8080 instead:</strong></p>
+        <div class="code">
+            http://localhost:8080/pisal_project/
+        </div>
+        <p class="success">This should work immediately!</p>
+    </div>
+
+    <h2>🔧 Permanent Solutions:</h2>
+    
+    <div class="step">
+        <h3>Option 1: Use Port 8080 (Easiest)</h3>
+        <p>Just access your site with <code>http://localhost:8080/pisal_project/</code></p>
+    </div>
+
+    <div class="step">
+        <h3>Option 2: Stop Other Apache</h3>
+        <p>Open Task Manager and find "httpd.exe" process (PID 10192)<br>
+        Right-click → End Task</p>
+    </div>
+
+    <div class="step">
+        <h3>Option 3: Reinstall XAMPP</h3>
+        <p>Uninstall both XAMPP versions and install fresh XAMPP to C:\xampp\</p>
+    </div>
+
+    <h2>🧪 Test Links:</h2>
+    <ul>
+        <li><a href="http://localhost:8080/pisal_project/" target="_blank">🌐 Homepage (Port 8080)</a></li>
+        <li><a href="http://localhost:8080/pisal_project/test.php" target="_blank">🧪 PHP Test (Port 8080)</a></li>
+        <li><a href="http://localhost:8080/pisal_project/db-test.php" target="_blank">🔍 Database Test (Port 8080)</a></li>
+    </ul>
+
+    <div class="alert">
+        <h3>⚠️ Important:</h3>
+        <p>Your current XAMPP installation at <code>C:\xampp\</code> is incomplete (missing Apache/MySQL files).<br>
+        Consider using the working installation at <code>C:\Users\Microsoft surface\Downloads\PISAL\</code> instead.</p>
+    </div>
+</body>
+</html>
